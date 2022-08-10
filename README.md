@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+In this project, let's build a **Credit Card** by applying the concepts we have learned till now.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Refer to the image below:
 
-## Available Scripts
+<br/>
+<div style="text-align: center;">
+    <img src="https://assets.ccbp.in/frontend/content/react-js-hooks/credit-card-output-v0.gif" alt="credit card output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
+<br/>
 
-In the project directory, you can run:
+### Design Files
 
-### `npm start`
+<details>
+<summary>Click to view</summary>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js-hooks/credit-card-sm-outputs-v0.png)
+- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Empty Credit Card](https://assets.ccbp.in/frontend/content/react-js-hooks/empty-credit-card-lg-output.png)
+- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Credit Card](https://assets.ccbp.in/frontend/content/react-js-hooks/credit-card-lg-output-v0.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+</details>
 
-### `npm test`
+### Set Up Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+<summary>Click to view</summary>
 
-### `npm run build`
+- Download dependencies by running `npm install`
+- Start up the app using `npm start`
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Completion Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
+<summary>Functionality to be added</summary>
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app must have the following functionalities
 
-### `npm run eject`
+- When a credit card number is provided in the card number input, then the provided value should be displayed on the credit card
+- When a credit cardholder name is provided in the cardholder name input, then the provided value should be displayed on the credit card
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<details>
+<summary>Implementation Files</summary>
+<br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Use these files to complete the implementation:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `src/components/CreditCard/index.js`
+- `src/components/CreditCard/styledComponents.js`
+</details>
 
-## Learn More
+### Quick Tips
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<details close>
+<summary>Click to view</summary>
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- To convert a string value to uppercase we can use `toUpperCase()`
+</details>
 
-### Code Splitting
+### Important Note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<details>
+<summary>Click to view</summary>
 
-### Analyzing the Bundle Size
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**The following instructions are required for the tests to pass**
 
-### Making a Progressive Web App
+- **Styled Components** should be used for styling purposes
+- HTML input element for card number should have the placeholder as **Card Number**
+- HTML input element for cardholder name should have the placeholder as **Cardholder Name**
+- HTML container element with `data-testid` as **creditCard** should have the background image URL as the given credit card image URL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+</details>
 
-### Advanced Configuration
+### Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<details>
+<summary>Image URLs</summary>
 
-### Deployment
+- [https://assets.ccbp.in/frontend/hooks/credit-card-bg.png](https://assets.ccbp.in/frontend/hooks/credit-card-bg.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+</details>
 
-### `npm run build` fails to minify
+<details>
+<summary>Colors</summary>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br/>
+
+<div style="background-color: #3b4b69; width: 150px; padding: 10px; color: white">Hex: #3b4b69</div>
+<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
+<div style="background-color: #ffd773; width: 150px; padding: 10px; color: black">Hex: #ffd773</div>
+<div style="background-color: #344e7a; width: 150px; padding: 10px; color: white">Hex: #344e7a</div>
+<div style="background-color: #d3d9e0; width: 150px; padding: 10px; color: black">Hex: #d3d9e0</div>
+<div style="background-color: #475569; width: 150px; padding: 10px; color: white">Hex: #475569</div>
+<div style="background-color: #c3cad9; width: 150px; padding: 10px; color: black">Hex: #c3cad9</div>
+<br/>
+</details>
+
+<details>
+<summary>Font-families</summary>
+
+- Roboto
+
+</details>
+
+> ### _Things to Keep in Mind_
+>
+> - All components you implement should go in the `src/components` directory.
+> - Don't change the component folder names as those are the files being imported into the tests.
+> - **Do not remove the pre-filled code**
+> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
